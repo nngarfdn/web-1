@@ -2,12 +2,21 @@
 <html>
 <head>
 	<title>Berkenalan Dengan HTML</title>
+	<style type="text/css">
+		#warna-merah{
+			color: blue;
+		}
+
+		.padding-10px{
+			padding: 10px;
+		}
+	</style>
 </head>
 <body>
 
 	<!-- Ini adalah comment dan tidak akan terbaca -->
 
-	<h1>Judul yang mengawali petualanganku</h1>
+	<h1 id="warna-merah">Judul yang mengawali petualanganku</h1>
 	<p> Sebuah paragraf yang mendeskripsikan petualanganku </p>
 	<button>Mulai Petualanganku</button>
 
@@ -67,16 +76,45 @@
 
 	<table style="border-collapse: collapse;" border="1">
 		<tr>
-			<th>FirstName</th>
-			<th>Lastname</th>
-			<th>Age</th>
+			<th rowspan="2">FirstName</th>
+			<th rowspan="2">Lastname</th>
+			<th rowspan="2">Age</th>
+			<th rowspan="1" colspan="2">Status</th>
+			<th rowspan="2">Aksi</th>
 		</tr>
 
 		<tr>
-			<td>Jill</td>
-			<td>Joni</td>
-			<th>20</th>
+			<td>2020</td>
+			<td>2021</td>
 		</tr>
+
+
+
+		<tr>
+			<td class="padding-10px">Jill</td>
+			<td class="padding-10px">Joni</td>
+			<td class="padding-10px">20</td>
+			<td class="padding-10px">Lajang</td>
+			<td class="padding-10px">Lajang</td>
+			<td class="padding-10px">
+				<button>Edit</button>
+				<button>Delete</button>
+			</td>
+		</tr>
+
+		<tr>
+			<td >Jill</td>
+			<td >Joni</td>
+			<td>20</td>
+			<td>Lajang</td>
+			<td>Lajang</td>
+			<td>
+				<button>Edit</button>
+				<button>Delete</button>
+			</td>
+		</tr>
+		
+
 	</table>
 
 </body>
